@@ -4,7 +4,7 @@ author: "Mariana Ravícole"
 date: "15-01-2021"
 ---
 
-# Proyecto PetShop - Grupo 0cd 3
+# Proyecto PetShop - Grupo 03
 
 ## Integrantes
 
