@@ -1,5 +1,5 @@
 ---
-title: "Proyecto Integrado PetShop"
+title: "Proyecto Integrado"
 author: "Mariana Ravícole"
 date: "15-01-2021"
 ---
@@ -19,7 +19,9 @@ Tienda de venta minorista de artículos para las mascotas, alimentos y accesorio
 
 Con sólo registrarse puede adquirir con cualquier tarjeta de crédito o através de mercado pago lo que desea y recibirlo cómodo en su casa.
 
+---
 ## Listado de referentes
+
 ### Otras tiendas con la misma temática. 
 
 La mayoria usa "Tienda Nube" como servicio. 
@@ -39,9 +41,13 @@ Por estética y por una buena experiencia de usuario en el proceso de compra y v
 - https://www.hausorganicmarket.com/?ref=tiendanube.com
 - https://shop.luigibosca.com/
 
+---
+
 ## Design
 
-### Fonts Generales
+### Fonts
+
+Colocar en el *head* el link de Google Fonts
 
 ```html
 <!-- Open Sans -->
@@ -64,6 +70,8 @@ h3 {
     font-weight: 400;
 }
 
+/* En descripcion de producto */
+
 p {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -72,11 +80,18 @@ p {
 
 ### Fonts Icons
 
+1. Bajar la carpeta del siguiente URL: https://fontawesome.com/v4.7.0/get-started/.
+
+2. Descomprimirla y llevarla dentro de la carpeta **public/css**.
+
+3. Colocar en el *head* los links a **font-awesome.css** y a **font-awesome.min.css**
+
 ```html
 <!-- Font Awesome -->
 
 <head>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -94,23 +109,13 @@ p {
 
 ### Colores Generales
 
-```css
-.white {color: #ffffff;}
 
-.grey-01 {color: #E9E9E9;}
+- blanco: #ffffff;
+- gris-claro: #E9E9E9;
+- gris-medio: #CDCDCD;
+- gris-oscuro: #979797;
+- negro: #000000;
 
-.grey-02 {color: #CDCDCD;}
-
-.grey-03 {color: #979797;}
-
-.black {color: #000000;}
-
-
-
-.yellow {color: #FDB440;}
-
-.orange {color: #FF662A;}
-
-.brown {color: #471F1F;}
-
-```
+- amarillo: #FDB440;
+- naranja: #FF662A;
+- marron: #471F1F;
