@@ -12,26 +12,27 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="promo-header">
-        <p>NOVEDADES Y PROMOCIONES</p>
-      </div>
-      <div>
-        <img src="/img/logo.png" alt="Logo PetShop" class="img-logo" />
-      </div>
-      <section class="nav-bar">
-        
-        <nav class="nav-menu">
+    <div class="container">
+      <header>
+        <div class="banner-superior">
+          <p>ENVIO GRATIS EN CABA Y ALREDEDORES</p>
+          <p>5% OFF PAGANDO EN EFECTIVO</p>
+        </div>
+        <div class="menu-headder">
           <i class="fas fa-bars"></i>
-          <ul>
-            <li><a href="#">Gatos</a></li>
-            <li><a href="#">Perros</a></li>
-            <li><a href="#">Accesorios</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-      </section>
-    </header>
+          <i class="fas fa-shopping-cart"></i>
+          <img
+            src="/img/img-logo-petShop.svg"
+            alt="Logo PetShop"
+            class="img-logo"
+          />
+          
+        </div>
+        <div class="buscador-headder">
+          <input type="text" placeholder="Que estas buscando" />
+          <i class="fas fa-search"></i>
+        </div>
+      </header>
 
     <main>
       <h2>Iniciar Sesion</h2>
@@ -59,15 +60,15 @@
     </main>
 
 
-    <footer>
+    <footer class="footer">
 
       <section class="categorias-footer">
         
         <h2>Categorias</h2>
-        <ul>
-          <li><a href="#">Gatos</a></li>
-          <li><a href="#">Perros</a></li>
-          <li><a href="#">Accesorios</a></li>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Gatos</a></li>
+          <li class="nav-item"><a href="#">Perros</a></li>
+          <li class="nav-item"><a href="#">Accesorios</a></li>
           
         </ul>
 
@@ -75,7 +76,7 @@
 
       <section class="medios-de-pago">
         <h2>Medios De Pago</h2>
-        <ul>
+        <ul class="nav-list">
           <li><a href="#">Visa</a></li>
           <li><a href="#">Mastercard</a></li>
           <li><a href="#">MercadoPago</a></li>
@@ -109,6 +110,6 @@
 
 
     </footer>
-
+  </div>
   </body>
 </html>

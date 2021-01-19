@@ -1,9 +1,183 @@
+* {
+
+  box-sizing: border-box;
+
+}
+
+
 .img-logo {
-  width: 100%;
+  width: 50%;
   max-width: 500px;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  padding: 10px;
 }
+
+.banner-superior {
+  background-color: #ff662a;
+  color: #ffffff;
+  text-align: center;
+  padding: 1px;
+}
+
+.menu-headder {
+  width: auto;
+  background-color: #fdb440;
+}
+
+.fa-bars {
+  position: relative;
+ top: 50px; 
+ padding-left: 20px;
+ font-size: 30px;
+
+}
+.fa-shopping-cart{
+position: relative;
+top: 50px;
+padding-right: 20px;
+float: right;
+font-size: 26px;
+
+}
+
+.buscador-headder {
+  background-color: #fdb440;
+  text-align: center;
+  position: relative;
+  
+}
+
+.buscador-headder i {
+position: absolute;
+right: 120px;
+top: 3px;
+
+}
+
+.imagen-banner img{
+
+  
+  width: 100%;
+ 
+
+}
+
+
+.articulos-nuevos .articulos img{
+
+  width: 100%;
+  border: solid #CDCDCD;
+  
+  
+  }
+  
+  .categorias div img{
+  width: 100%;
+  
+  }
+  
+  .categorias div p{
+  
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  
+  .articulos-nuevos .articulos .nombre-producto {
+  
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+  
+  .articulos-nuevos .articulos .precio-producto {
+  
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff662a;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  
+  }
+  
+.articulos-nuevos h2 {
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #471f1f;
+  
+}
+
+.categorias h2 {
+
+font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #471f1f;
+
+}
+
+
+.footer {
+
+
+  background-color: #471f1f;
+  text-decoration: none;
+  
+}
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list a {
+  
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+.categorias-footer h2 {
+  padding-left: 30px;
+  color: #fdb440;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.medios-de-pago h2 {
+  padding-left: 30px;
+  color: #fdb440;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+
+.contacto h2 {
+  padding-left: 30px;
+  color: #fdb440;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.contacto p {
+  padding-left: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  list-style-type: none;
+}
+
+.mail-imput{
+
+text-align: center;
+
+}
+
+.instagram-button i {
+  background-color: #fdb440;
+}
+
+

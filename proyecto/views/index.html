@@ -15,73 +15,74 @@
   </head>
 
   <body>
+    <div class="container">
     <header>
-      <div class="promo-header">
+      <div class="banner-superior">
         <p>ENVIO GRATIS EN CABA Y ALREDEDORES</p>
-        <p><strong>5% OFF PAGANDO EN EFECTIVO</strong></p>
+        <p>5% OFF PAGANDO EN EFECTIVO</p>
       </div>
-
-      <section class="nav-bar">
-        <div>
-          <img src="/img/logo.png" alt="Logo PetShop" class="img-logo" />
-        </div>
-        <nav class="nav-menu">
-          <ul>
-            <li><a href="#">Gatos</a></li>
-            <li><a href="#">Perros</a></li>
-            <li><a href="#">Accesorios</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-      </section>
+      <div class="menu-headder">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <img
+          src="/img/img-logo-petShop.svg"
+          alt="Logo PetShop"
+          class="img-logo"
+        />
+        
+      </div>
+      <div class="buscador-headder">
+        <input type="text" placeholder="Que estas buscando" />
+        <i class="fas fa-search"></i>
+      </div>
     </header>
     <main>
-      <section>
-        <p>Slider Promociones </p>
+      <section class="imagen-banner">
+        <img src="./img/banner-slide-mobile.png" alt="">
       </section>
 
       <section class="slider-pagos">
-        <p>Slider pagos</p>
+        <p>Slider Pagos</p>
       </section>
 
       <section class="articulos-nuevos">
         <h2>Nuevos Productos</h2>
-        <article>
-          <img src="" alt="foto-promo-1" />
-          <p>Nombre del Producto</p>
-          <p>$1000</p>
+        <article class="articulos">
+          <img src="./img/img-accesorio-kong-goodie-bone-extreme.jpg" alt="foto-promo-1" />
+          <p class="nombre-producto">Nombre del Producto</p>
+          <p class="precio-producto" >$1000</p>
         </article>
-        <article>
-          <img src="" alt="foto-promo-2" />
-          <p>Nombre del Producto</p>
-          <p>$1000</p>
+        <article class="articulos">
+          <img src="./img/img-accesorio-kong-dotz-triangle.jpg" alt="foto-promo-2" />
+          <p class="nombre-producto">Nombre del Producto</p>
+          <p class="precio-producto" >$1000</p>
         </article>
       </section>
 
       <section class="categorias">
         <h2>Categorias</h2>
         <div>
-          <img src="" alt="imagen-perro">
+          <img src="./img/img-categoria-perros.png" alt="imagen-perro">
         <p>Perros</p> </div>
         <div>
-          <img src="" alt="imagen-gato">
+          <img src="./img/img-categoria-gatos.png" alt="imagen-gato">
           <p>Gatos</p>  
         </div>
         <div>
-          <img src="" alt="imagen-acc">
+          <img src="./img/img-categoria-accesorios.png" alt="imagen-acc">
         <p>Accesorios</p> 
       </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
 
       <section class="categorias-footer">
         
         <h2>Categorias</h2>
-        <ul>
-          <li><a href="#">Gatos</a></li>
-          <li><a href="#">Perros</a></li>
-          <li><a href="#">Accesorios</a></li>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Gatos</a></li>
+          <li class="nav-item"><a href="#">Perros</a></li>
+          <li class="nav-item"><a href="#">Accesorios</a></li>
           
         </ul>
 
@@ -89,7 +90,7 @@
 
       <section class="medios-de-pago">
         <h2>Medios De Pago</h2>
-        <ul>
+        <ul class="nav-list">
           <li><a href="#">Visa</a></li>
           <li><a href="#">Mastercard</a></li>
           <li><a href="#">MercadoPago</a></li>
@@ -123,5 +124,7 @@
 
 
     </footer>
+  </div>
+
   </body>
 </html>
