@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>.: PetShop - Detalle de Producto :.</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <header class="">
+      <div class="promo-header center">
+        <p>ENVIO GRATIS EN CABA Y ALREDEDORES<br><strong>5% OFF PAGANDO EN EFECTIVO</strong></p>
+      </div>
+
+      <div class="container-fluid pb-3">
+        <section class="nav-bar no-gutters">
+          <!-- <nav class="nav-menu">
+            <ul>
+              <li><a href="#">Gatos</a></li>
+              <li><a href="#">Perros</a></li>
+              <li><a href="#">Accesorios</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav> -->
+          <div class="menu-bars d-block text-left">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="logo text-center">
+            <a href="#"><img src="/img/img-logo-petShop.svg" alt="Logo PetShop" class="img-logo" /></a>
+          </div>
+          <div class="shopping-cart text-right">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </section>
+        <section class="search-input-box form-group order-last center">
+            <input class="search-input form-control" type="text" placeholder="Qué estás buscando?">
+            <button class="btn search-input-submit" type="submit"><i class="fa fa-search"></i></button>
+        </section>
+      </div>
+    </header>
+
+    <main class="product-detail">
+    
+        <section class="breadcrumb">
+            <a href="#">Inicio</a> / <a href="#">Gatos</a> / <a href="#">Alimentos</a> / <strong>Royal Canin Exigent</strong>
+        </section>
+    
+        <section class="detail">
+            <figure class="img-container">
+                <img src="img/img-alimento-gato-exigent.jpg" alt="img-accesorio-kong-ball-soga" />
+            </figure>
+            <h1>Royal Canin Gatos Exigent</h1>
+            <span class="price">$1.175</span>
+
+            <div class="form-detail">
+              <div class="form-group my-2">
+                <label class="form-label" for="cars">Presentación</label>
+                <select class="form-control" id="cars" name="cars">
+                  <option value="volvo">Elegí una opción</option>
+                </select>
+              </div>
+
+              <div class="form-group my-2">
+                <label class="form-label" for="number">Cantidad</label>
+                <input class="form-control" type="number" id="number" name="number">
+              </div>
+
+              <input class="btn btn-primary btn-block" type="submit" value="Agregar al Carrito" name="">
+            </div>
+        </section>
+
+        <section class="description-accordion">
+            
+            <button class="accordion border-top"><i class="fa fa-caret-right" aria-hidden="true"></i> Descripción</button>
+            <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion border-bottom"><i class="fa fa-caret-right" aria-hidden="true"></i> Información Adicional</button>
+            <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+        </section>
+        
+        <div class="tit-section"><h2>Productos Relacionados</h2></div>
+      
+        <section class="articulos-nuevos">
+            <article>
+            <div class="img-container">
+                <img src="img/img-alimento-gato-exigent.jpg" alt="img-accesorio-kong-ball-soga" />
+            </div>
+            <p class="name">Nombre de Producto</p>
+            <p class="price">$1000</p>
+            </article>
+            <article>
+            <div class="img-container">
+                <img src="img/img-alimento-gato-exigent.jpg" alt="img-accesorio-kong-ball-soga" />
+            </div>
+            <p class="name">Nombre de Producto</p>
+            <p class="price">$1000</p>
+            </article>
+            <article>
+            <div class="img-container">
+                <img src="img/img-alimento-gato-exigent.jpg" alt="img-accesorio-kong-ball-soga" />
+            </div>
+            <p class="name">Nombre de Producto</p>
+            <p class="price">$1000</p>
+            </article>
+            <article>
+            <div class="img-container">
+                <img src="img/img-alimento-gato-exigent.jpg" alt="img-accesorio-kong-ball-soga" />
+            </div>
+            <p class="name">Nombre de Producto</p>
+            <p class="price">$1000</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+      <section class="categorias-footer">
+        <h4>Categorias</h4>
+        <ul>
+          <li><a href="#">Gatos</a></li>
+          <li><a href="#">Perros</a></li>
+          <li><a href="#">Accesorios</a></li>
+        </ul>
+      </section>
+
+      <section class="medios-de-pago">
+        <h4>Medios De Pago</h4>
+        <ul>
+          <li><a href="#">Visa</a></li>
+          <li><a href="#">Mastercard</a></li>
+          <li><a href="#">MercadoPago</a></li>
+        </ul>
+      </section>
+
+      <section class="contacto">
+        <h4>Contacto</h4>
+        <p><i class="fas fa-phone-alt mr-1"></i>0800-000-0000</i></p>
+        <p><i class="far fa-envelope mr-1"></i>petshop@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt mr-1"></i>Calle Falsa 123 - CABA</p>
+      </section>
+
+      <section class="mail-input form-group">
+        <input class="search-input form-control" type="text" placeholder="Dejanos Tu email">
+      </section>
+
+      <section class="redes-sociales center">
+          <a class="social-icon-rounded" href="#">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a class="social-icon-rounded" href="#"> 
+            <i class="fab fa-facebook-f"></i>
+          </a>
+      </section>
+
+
+    </footer>
+    <!-- JS - accordion -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+  </body>
+</html>

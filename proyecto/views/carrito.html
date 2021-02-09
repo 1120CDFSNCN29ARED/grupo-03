@@ -1,169 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PetShop</title>
+    <title>.: PetShop - Carrito de Compra :.</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <body>
+    <header class="">
+      <div class="promo-header center">
+        <p>ENVIO GRATIS EN CABA Y ALREDEDORES<br><strong>5% OFF PAGANDO EN EFECTIVO</strong></p>
+      </div>
 
-    <link rel="stylesheet" href="./css/styles.css" />
-</head>
-
-<body>
-    <div class="container">
-
-        <header>
-            <div class="banner-superior">
-                <p>ENVIO GRATIS EN CABA Y ALREDEDORES</p>
-                <p>5% OFF PAGANDO EN EFECTIVO</p>
-            </div>
-            <div class="menu-headder">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-shopping-cart"></i>
-                <img src="/img/img-logo-petShop.svg" alt="Logo PetShop" class="img-logo" />
-
-            </div>
-            <div class="buscador-headder">
-                <input type="text" placeholder="Que estas buscando" />
-                <i class="fas fa-search"></i>
-            </div>
-        </header>
-
-        <main class="main-carrito">
-            <div class="titulo-carrito">MI CARRITO</div>
-            <div class="lista-carrito">
-
-
-                <article class="itme-carrito">
-                    <div class="imagen-item-carrito">
-                        <img src="./img/img-alimento-gato-exigent.jpg" alt="producto-en-carrito">
-                    </div>
-                    <div class="descripcion-item-carrito">
-                        <p>Royal Canun Gatos Exigente - 15Kg</p>
-                    </div>
-                    <div class="eliminar-item-carrito"><i class="fas fa-trash-alt"></i></div>
-                    <div class="sumar-restar-items-carrito">
-                        <p>+</p>
-                        <p>1</p>
-                        <p>-</p>
-
-                    </div>
-                    <div class="precio-item-carrito">$1175</div>
-
-
-                </article>
-
-                <article class="itme-carrito">
-                    <div class="imagen-item-carrito">
-                        <img src="./img/img-alimento-gato-exigent.jpg" alt="producto-en-carrito">
-                    </div>
-                    <div class="descripcion-item-carrito">
-                        <p>Royal Canun Perros Exigente - 15Kg</p>
-                    </div>
-                    <div class="eliminar-item-carrito"><i class="fas fa-trash-alt"></i></div>
-                    <div class="sumar-restar-items-carrito">
-                        <p>+</p>
-                        <p>1</p>
-                        <p>-</p>
-
-                    </div>
-                    <div class="precio-item-carrito">$1175</div>
-
-
-                </article>
-
-        </div>
-
-        <section class="sumatoria">
-
-            <div class="subtotal">
-                <p class="subtotal-titulo">SUBTOTAL</p> 
-                <p class="subtotal-precio"> $1175</p>
-
-            </div>
-
-            <div class="total">
-                <p class="total-titulo">TOTAL:</p>
-                <p class="total-precio">$2350</p>
-
-            </div>
-
-            <div class="pagar">
-                <button>INICIAR PAGO</button>
-                <p>Seguir Comprando</p>
-            </div>
+      <div class="container-fluid pb-3">
+        <section class="nav-bar no-gutters">
+          <!-- <nav class="nav-menu">
+            <ul>
+              <li><a href="#">Gatos</a></li>
+              <li><a href="#">Perros</a></li>
+              <li><a href="#">Accesorios</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav> -->
+          <div class="menu-bars d-block text-left">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="logo text-center">
+            <a href="#"><img src="/img/img-logo-petShop.svg" alt="Logo PetShop" class="img-logo" /></a>
+          </div>
+          <div class="shopping-cart text-right">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
         </section>
+        <section class="search-input-box form-group order-last center">
+            <input class="search-input form-control" type="text" placeholder="Qué estás buscando?">
+            <button class="btn search-input-submit" type="submit"><i class="fa fa-search"></i></button>
+        </section>
+      </div>
+    </header>
+
+    <main class="product-detail">
+    
+        <section class="breadcrumb">
+            <a href="#">Inicio</a> / <strong>Mi Carrito</strong>
+        </section>
+    
+        <section class="detail">
+
+          <section class="detail-product">
+            <div class="image-contenedor">
+              <img src="img/img-alimento-gato-exigent.jpg" alt="img-accesorio-kong-ball-soga" />
+            </div>
+            <div class="box-description">
+              <div class="tit-box-description">
+                <h1>Royal Canin Gatos Exigent - 15kg</h1>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="number">Cantidad</label>
+                <input class="form-control" type="number" id="number" name="number">
+              </div>
+            </div>
+            <div class="box-price-action">
+              <span class="delete"><i class="fas fa-trash-alt"></i></span>
+              <span class="price">$1.175</span>
+            </div>
+          </section>
+
+          <section class="detail-product">
+            <div class="image-contenedor">
+              <img src="img/img-alimento-gato-exigent.jpg" alt="img-accesorio-kong-ball-soga" />
+            </div>
+            <div class="box-description">
+              <div class="tit-box-description">
+                <h1>Royal Canin Gatos Exigent - 15kg</h1>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="number">Cantidad</label>
+                <input class="form-control" type="number" id="number" name="number">
+              </div>
+            </div>
+            <div class="box-price-action">
+              <span class="delete"><i class="fas fa-trash-alt"></i></span>
+              <span class="price">$1.175</span>
+            </div>
+          </section>
+
+          <section class="form-detail">
+            <input class="btn btn-primary btn-block" type="submit" value="Iniciar Pago" name="">
+            <span><a href="#">Seguir comprando</a></span>
+          </section>
+        </section>
+      
+    </main>
+
+    <footer>
+      <section class="categorias-footer">
+        <h4>Categorias</h4>
+        <ul>
+          <li><a href="#">Gatos</a></li>
+          <li><a href="#">Perros</a></li>
+          <li><a href="#">Accesorios</a></li>
+        </ul>
+      </section>
+
+      <section class="medios-de-pago">
+        <h4>Medios De Pago</h4>
+        <ul>
+          <li><a href="#">Visa</a></li>
+          <li><a href="#">Mastercard</a></li>
+          <li><a href="#">MercadoPago</a></li>
+        </ul>
+      </section>
+
+      <section class="contacto">
+        <h4>Contacto</h4>
+        <p><i class="fas fa-phone-alt mr-1"></i>0800-000-0000</i></p>
+        <p><i class="far fa-envelope mr-1"></i>petshop@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt mr-1"></i>Calle Falsa 123 - CABA</p>
+      </section>
+
+      <section class="mail-input form-group">
+        <input class="search-input form-control" type="text" placeholder="Dejanos Tu email">
+      </section>
+
+      <section class="redes-sociales center">
+          <a class="social-icon-rounded" href="#">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a class="social-icon-rounded" href="#"> 
+            <i class="fab fa-facebook-f"></i>
+          </a>
+      </section>
 
 
+    </footer>
+    <!-- JS - accordion -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-
-
-
-
-        </main>
-
-
-
-
-        <footer class="footer">
-
-            <section class="categorias-footer">
-
-                <h2>Categorias</h2>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#">Gatos</a></li>
-                    <li class="nav-item"><a href="#">Perros</a></li>
-                    <li class="nav-item"><a href="#">Accesorios</a></li>
-
-                </ul>
-
-            </section>
-
-            <section class="medios-de-pago">
-                <h2>Medios De Pago</h2>
-                <ul class="nav-list">
-                    <li><a href="#">Visa</a></li>
-                    <li><a href="#">Mastercard</a></li>
-                    <li><a href="#">MercadoPago</a></li>
-
-                </ul>
-
-            </section>
-
-            <section class="contacto">
-                <h2>Contacto</h2>
-                <p><i class="fas fa-phone-alt"></i> 0800-000-0000</i></p>
-                <p><i class="far fa-envelope"></i> petshop@gmail.com</p>
-                <p><i class="fas fa-map-marked-alt"></i> Calle Falsa 123 - CABA</p>
-            </section>
-
-            <section class="mail-imput">
-
-                <input type="text" placeholder="Dejanos Tu email">
-
-            </section>
-
-            <section class="redes-sociales">
-                <button>
-                    <i class="fab fa-instagram"></i>
-                </button>
-                <button>
-                    <i class="fab fa-facebook"></i>
-                </button>
-
-            </section>
-
-
-        </footer>
-
-
-</body>
-
-</div>
-
-
-
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+  </body>
 </html>
