@@ -4,6 +4,11 @@ const path = require("path");
 const app = express();
 const publicPath = path.resolve(__dirname, "./public");
 
+const rutaIndex = require("./routes/index.js");
+const rutaCarrito = require("./routes/carrito.js");
+const rutaLogin = require("./routes/login.js");
+const rutaRegistro = require("./routes/registro.js");
+const rutaProducto = require("./routes/producto.js");
 app.use(express.static(publicPath));
 
 //Servidor en puerto 3010
@@ -11,23 +16,19 @@ app.listen(3010, function () {
   console.log("Server en puerto 3010");
 });
 
+app.set("view engine", "ejs");
+app.use(express.static("public"));
+
 //ruta inicial a index.html
-app.get("/", function (req, res) {
-  res.sendFile(path.resolve(__dirname, "./views/index.html"));
-});
+app.use("/", rutaIndex);
+
 // ruta al carrito de compras
-app.get("/carrito", function (req, res) {
-  res.sendFile(path.resolve(__dirname, "./views/carrito.html"));
-});
-//ruta al formulario de registro
-app.get("/registro", function (req, res) {
-  res.sendFile(path.resolve(__dirname, "./views/registro.html"));
-});
+app.use("/carrito", rutaCarrito);
+
 //ruta al formulario de LogIn
-app.get("/login", function (req, res) {
-  res.sendFile(path.resolve(__dirname, "./views/login.html"));
-});
+app.use("/login", rutaLogin);
+
+//ruta al formulario de registro
+app.use("/registro", rutaRegistro);
 //ruta a detalles de producto
-app.get("/producto", function (req, res) {
-  res.sendFile(path.resolve(__dirname, "./views/producto.html"));
-});
+app.use("/producto", rutaProducto);

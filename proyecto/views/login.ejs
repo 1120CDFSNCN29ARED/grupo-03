@@ -1,0 +1,30 @@
+<%- include('./partials/head')  %> 
+
+  <body>
+   <%- include('./partials/header')  %> 
+
+    <main class="login">
+
+      <div class="tit-section"><h2>Iniciar Sesión</h2></div>
+
+        <section class="login-register">
+            <div class="form-login-register">
+              <div class="form-group my-2">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="" required>
+              </div>
+
+              <div class="form-group my-2">
+                <label class="form-label" for="password">Contraseña</label>
+                <input class="form-control" type="password" id="password" name="password" placeholder="" required>
+                <span><a href="#">¿Olvidaste tu contraseña?</a></span>
+              </div>
+
+              <input class="btn btn-primary btn-block mt-2" type="submit" value="Iniciar Sesión" name="">
+              <span>¿No tenés cuenta aún? <a href="#">Crear cuenta</a></span>
+            </div>
+        </section>
+    </main>
+    <%- include('./partials/footer')  %> 
+  </body>
+</html>
