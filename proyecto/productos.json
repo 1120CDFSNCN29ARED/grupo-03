@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "Asado",
+        "precio": "2000"
+    },
+    {
+        "nombre": "costillas",
+        "precio": "3000"
+    },
+    {
+        "nombre": "salchipapa",
+        "precio": ""
+    }
+]

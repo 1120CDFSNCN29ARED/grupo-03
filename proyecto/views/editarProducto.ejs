@@ -1,0 +1,43 @@
+<%- include('./partials/head')  %> 
+
+  <body>
+    <%- include('./partials/header')  %> 
+<main>
+    <br>
+    <p>EDITOR DE PRODUCTO</p>
+
+<form action="/producto/editar?_method=PUT" method="POST">
+
+  <label>Nombre Producto</label>
+  <input type="text" name="nombre" id="nombre" value="<%= productoToEdit.nombre%>">
+<br>
+<label>Precio</label>
+<input type="numbre" name="precio" id="precio" value="<%= productoToEdit.precio%>">
+
+<button type="submit">Editar</button>
+
+</form>
+
+</main>
+    
+
+    <%- include('./partials/footer')  %> 
+    <!-- JS - accordion -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+  </body>
+</html>

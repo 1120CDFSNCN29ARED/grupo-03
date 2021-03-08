@@ -1,0 +1,48 @@
+<%- include('./partials/head')  %> 
+
+  <body>
+    <%- include('./partials/header')  %> 
+<main>
+    <br>
+    <p>CREACION DE PRODUCTO NUEVO</p>
+    <br>
+    <br>
+
+
+<form action ='/producto/nuevo' method="POST" >
+
+<label>Nombre Producto</label>
+<input type="text" name="nombre" id="nombre">
+
+<label>Precio</label>
+<input type="numbre" name="precio" id="precio"> 
+
+<button type="submit">Enviar</button>
+
+</form>
+
+
+
+</main>
+    
+
+    <%- include('./partials/footer')  %> 
+    <!-- JS - accordion -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+  </body>
+</html>
